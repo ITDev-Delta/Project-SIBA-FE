@@ -1,0 +1,503 @@
+@import "tailwindcss";
+
+/* Token tema konsisten dengan tailwind.config.ts */
+@theme {
+  /* Dasar */
+  --color-current: currentColor;
+  --color-transparent: transparent;
+  --color-white: #ffffff;
+
+  /* Black variants */
+  --color-black: #2b2a26;
+  --color-black-2: #1a1916;
+
+  /* Red (override default) */
+  --color-red: #a03e3e;
+
+  /* Body text variants */
+  --color-body: #6c5e51;
+  --color-bodydark: #8a7b6a;
+  --color-bodydark1: #c4b4a4;
+  --color-bodydark2: #a89a8a;
+
+  /* Brand */
+  --color-primary: #4e3d2f;
+  --color-secondary: #d0b88a;
+
+  /* Stroke / borders */
+  --color-stroke: #e2e8f0;
+  --color-strokedark: #5b4a3f;
+  --color-form-strokedark: #6b5a4a;
+
+  /* Input */
+  --color-form-input: #4a3c30;
+
+  /* Gray warm variants */
+  --color-gray: #e6dccd;
+  --color-gray-2: #f2ede5;
+  --color-gray-3: #f9f6f1;
+  --color-graydark: #3f3a33;
+
+  /* Whites */
+  --color-whiten: #f6f0e8;
+  --color-whiter: #fbf8f4;
+
+  /* Surfaces */
+  --color-boxdark: #3a3027;
+  --color-boxdark-2: #2f251d;
+
+  /* Meta palette */
+  --color-meta-1: #a03e3e;
+  --color-meta-2: #ede6da;
+  --color-meta-3: #6e8a5e;
+  --color-meta-4: #4a4036;
+  --color-meta-5: #c5a778;
+  --color-meta-6: #e1b756;
+  --color-meta-7: #d46e6e;
+  --color-meta-8: #c3925a;
+  --color-meta-9: #e8e2d8;
+  --color-meta-10: #9aa691;
+
+  /* Status */
+  --color-success: #6e8a5e;
+  --color-danger: #a03e3e;
+  --color-warning: #e1b756;
+
+  --font-satoshi: "Satoshi", sans-serif;
+
+  /* Font sizes (key => --text-*) */
+  --text-title-xxl: 44px;
+  --leading-title-xxl: 55px;
+  --text-title-xl: 36px;
+  --leading-title-xl: 45px;
+  --text-title-xl2: 33px;
+  --leading-title-xl2: 45px;
+  --text-title-lg: 28px;
+  --leading-title-lg: 35px;
+  --text-title-md: 24px;
+  --leading-title-md: 30px;
+  --text-title-md2: 26px;
+  --leading-title-md2: 30px;
+  --text-title-sm: 20px;
+  --leading-title-sm: 26px;
+  --text-title-xsm: 18px;
+  --leading-title-xsm: 24px;
+
+  /* Spacing (gunakan _ untuk angka desimal) */
+  --spacing-4_5: 1.125rem;
+  --spacing-5_5: 1.375rem;
+  --spacing-6_5: 1.625rem;
+  --spacing-7_5: 1.875rem;
+  --spacing-8_5: 2.125rem;
+  --spacing-9_5: 2.375rem;
+  --spacing-10_5: 2.625rem;
+  --spacing-11: 2.75rem;
+  --spacing-11_5: 2.875rem;
+  --spacing-12_5: 3.125rem;
+  --spacing-13: 3.25rem;
+  --spacing-13_5: 3.375rem;
+  --spacing-14: 3.5rem;
+  --spacing-14_5: 3.625rem;
+  --spacing-15: 3.75rem;
+  --spacing-15_5: 3.875rem;
+  --spacing-16: 4rem;
+  --spacing-16_5: 4.125rem;
+  --spacing-17: 4.25rem;
+  --spacing-17_5: 4.375rem;
+  --spacing-18: 4.5rem;
+  --spacing-18_5: 4.625rem;
+  --spacing-19: 4.75rem;
+  --spacing-19_5: 4.875rem;
+  --spacing-21: 5.25rem;
+  --spacing-21_5: 5.375rem;
+  --spacing-22: 5.5rem;
+  --spacing-22_5: 5.625rem;
+  --spacing-24_5: 6.125rem;
+  --spacing-25: 6.25rem;
+  --spacing-25_5: 6.375rem;
+  --spacing-26: 6.5rem;
+  --spacing-27: 6.75rem;
+  --spacing-27_5: 6.875rem;
+  --spacing-29: 7.25rem;
+  --spacing-29_5: 7.375rem;
+  --spacing-30: 7.5rem;
+  --spacing-31: 7.75rem;
+  --spacing-32_5: 8.125rem;
+  --spacing-34: 8.5rem;
+  --spacing-34_5: 8.625rem;
+  --spacing-35: 8.75rem;
+  --spacing-36_5: 9.125rem;
+  --spacing-37_5: 9.375rem;
+  --spacing-39: 9.75rem;
+  --spacing-39_5: 9.875rem;
+  --spacing-40: 10rem;
+  --spacing-42_5: 10.625rem;
+  --spacing-44: 11rem;
+  --spacing-45: 11.25rem;
+  --spacing-46: 11.5rem;
+  --spacing-47_5: 11.875rem;
+  --spacing-49: 12.25rem;
+  --spacing-50: 12.5rem;
+  --spacing-52: 13rem;
+  --spacing-52_5: 13.125rem;
+  --spacing-54: 13.5rem;
+  --spacing-54_5: 13.625rem;
+  --spacing-55: 13.75rem;
+  --spacing-55_5: 13.875rem;
+  --spacing-59: 14.75rem;
+  --spacing-60: 15rem;
+  --spacing-62_5: 15.625rem;
+  --spacing-65: 16.25rem;
+  --spacing-67: 16.75rem;
+  --spacing-67_5: 16.875rem;
+  --spacing-70: 17.5rem;
+  --spacing-72_5: 18.125rem;
+  --spacing-73: 18.25rem;
+  --spacing-75: 18.75rem;
+  --spacing-90: 22.5rem;
+  --spacing-94: 23.5rem;
+  --spacing-95: 23.75rem;
+  --spacing-100: 25rem;
+  --spacing-115: 28.75rem;
+  --spacing-125: 31.25rem;
+  --spacing-132_5: 33.125rem;
+  --spacing-150: 37.5rem;
+  --spacing-171_5: 42.875rem;
+  --spacing-180: 45rem;
+  --spacing-187_5: 46.875rem;
+  --spacing-203: 50.75rem;
+  --spacing-230: 57.5rem;
+  --spacing-242_5: 60.625rem;
+
+  /* Max width tokens */
+  --max-w-2_5: 0.625rem;
+  --max-w-3: 0.75rem;
+  --max-w-4: 1rem;
+  --max-w-11: 2.75rem;
+  --max-w-13: 3.25rem;
+  --max-w-14: 3.5rem;
+  --max-w-15: 3.75rem;
+  --max-w-22_5: 5.625rem;
+  --max-w-25: 6.25rem;
+  --max-w-30: 7.5rem;
+  --max-w-34: 8.5rem;
+  --max-w-35: 8.75rem;
+  --max-w-40: 10rem;
+  --max-w-42_5: 10.625rem;
+  --max-w-44: 11rem;
+  --max-w-45: 11.25rem;
+  --max-w-70: 17.5rem;
+  --max-w-90: 22.5rem;
+  --max-w-94: 23.5rem;
+  --max-w-125: 31.25rem;
+  --max-w-132_5: 33.125rem;
+  --max-w-142_5: 35.625rem;
+  --max-w-150: 37.5rem;
+  --max-w-180: 45rem;
+  --max-w-203: 50.75rem;
+  --max-w-230: 57.5rem;
+  --max-w-242_5: 60.625rem;
+  --max-w-270: 67.5rem;
+  --max-w-280: 70rem;
+  --max-w-292_5: 73.125rem;
+
+  /* Max height tokens */
+  --max-h-35: 8.75rem;
+  --max-h-70: 17.5rem;
+  --max-h-90: 22.5rem;
+  --max-h-550: 34.375rem;
+  --max-h-300: 18.75rem;
+
+  /* Min width tokens */
+  --min-w-22_5: 5.625rem;
+  --min-w-42_5: 10.625rem;
+  --min-w-47_5: 11.875rem;
+  --min-w-75: 18.75rem;
+
+  /* Z index */
+  --z-999999: 999999;
+  --z-99999: 99999;
+  --z-9999: 9999;
+  --z-999: 999;
+  --z-99: 99;
+  --z-9: 9;
+  --z-1: 1;
+
+  /* Opacity */
+  --opacity-65: 0.65;
+
+  /* Border width */
+  --border-6: 6px;
+
+  /* Shadows */
+  --shadow-default: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+  --shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-card-2: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-switcher: 0px 2px 4px rgba(0, 0, 0, 0.2), inset 0px 2px 2px #ffffff,
+    inset 0px -1px 1px rgba(0, 0, 0, 0.1);
+  --shadow-switch-1: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  --shadow-1: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-2: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  --shadow-3: 0px 1px 5px rgba(0, 0, 0, 0.14);
+  --shadow-4: 0px 4px 10px rgba(0, 0, 0, 0.12);
+  --shadow-5: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  --shadow-6: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  --shadow-7: -5px 0 0 #313d4a, 5px 0 0 #313d4a;
+  --shadow-8: 1px 0 0 #313d4a, -1px 0 0 #313d4a, 0 1px 0 #313d4a,
+    0 -1px 0 #313d4a, 0 3px 13px rgb(0 0 0 / 8%);
+
+  /* Drop shadows */
+  --drop-shadow-1: 0px 1px 0px #e2e8f0;
+  --drop-shadow-2: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* Keyframes & animations */
+@keyframes rotating {
+  0%,
+  100% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Utility tambahan (bila perlu karena token belum otomatis) */
+/* @utility .animate-rotating {
+  animation: rotating 30s linear infinite;
+}
+
+@utility .animate-spin-1_5 {
+  animation: spin 1.5s linear infinite;
+}
+@utility .animate-spin-2 {
+  animation: spin 2s linear infinite;
+}
+@utility .animate-spin-3 {
+  animation: spin 3s linear infinite;
+} */
+
+/* Background image & content icon (gunakan utility kustom) */
+/* @utility .bg-video {
+  background-image: url("../images/video/video.png");
+}
+@utility .content-icon-copy {
+  content: url("../images/icon/icon-copy-alt.svg");
+} */
+
+@layer base {
+  img {
+    display: initial;
+  }
+}
+
+.custom-checkbox .ant-checkbox-inner {
+  border-color: #d0b88a !important; /* Border color */
+}
+
+.custom-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #d0b88a !important; /* Checked background */
+  border-color: #d0b88a !important;
+}
+
+/* Styling untuk Switch saat dalam keadaan OFF (tidak aktif) */
+.custom-switch.ant-switch:not(.ant-switch-checked) {
+  background: #bfbfbf; /* Warna abu-abu lembut saat OFF */
+}
+
+/* Styling untuk Switch saat dalam keadaan ON (aktif/checked) */
+.custom-switch.ant-switch-checked {
+  background-color: #d0b88a !important; /* Warna utama saat ON */
+}
+
+/* Opsi tambahan: Styling untuk handle (lingkaran) saat di-hover */
+.custom-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background: #c5a975 !important; /* Warna sedikit lebih gelap saat hover */
+}
+
+.custom-radio .ant-radio-inner {
+  border-color: #d0b88a !important; /* Border color */
+}
+.custom-radio .ant-radio-checked .ant-radio-inner {
+  background-color: #d0b88a !important; /* Checked background */
+  border-color: #d0b88a !important;
+}
+.custom-radio .ant-radio-checked::after {
+  background-color: #d0b88a !important; /* Checked background */
+}
+.custom-radio .ant-radio-checked::before {
+  background-color: #d0b88a !important; /* Checked background */
+}
+
+.datepicker-right-align .ant-picker-input > input {
+  text-align: right;
+}
+
+.custom-tabs .ant-tabs-bar {
+  background-color: #f0f0f0; /* Tab bar background */
+}
+
+.custom-tabs .ant-tabs-tab {
+  color: #000; /* Inactive tab color */
+}
+
+.custom-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #4e3d2f !important; /* Active tab color */
+}
+
+.custom-tabs .ant-tabs-tab:hover .ant-tabs-tab-btn {
+  color: #4e3d2f; /* Hover tab color */
+}
+
+.custom-tabs .ant-tabs-tab-btn {
+  color: #d1ccc0 !important; /* Active tab color */
+}
+
+/* Change the indicator (underline) color for the active tab */
+.custom-tabs .ant-tabs-ink-bar {
+  background-color: #d0b88a; /* Change to the desired color */
+}
+
+.ant-menu-dark {
+  background-color: transparent !important; /* Menu background */
+  color: transparent !important;
+}
+.ant-menu-dark .ant-menu-inline {
+  background-color: transparent !important; /* Menu background */
+  color: transparent !important;
+}
+
+/* Sidebar menu styles */
+.ant-menu-dark .ant-menu-item {
+  color: #d1ccc0 !important; /* Menu item color */
+}
+
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: rgb(63 58 51 / var(--tw-bg-opacity, 1));
+  color: rgb(196 180 164 / var(--tw-text-opacity, 1));
+}
+
+.ant-menu-dark .ant-menu-title:hover {
+  background-color: rgb(63 58 51 / var(--tw-bg-opacity, 1));
+  color: rgb(196 180 164 / var(--tw-text-opacity, 1));
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: rgb(63 58 51 / var(--tw-bg-opacity, 1));
+  color: rgb(196 180 164 / var(--tw-text-opacity, 1));
+}
+
+.ant-menu-dark .ant-menu-submenu-title {
+  color: #d1ccc0 !important; /* Submenu title color */
+}
+
+.ant-menu-dark .ant-menu-submenu-title:hover {
+  background-color: rgb(63 58 51 / var(--tw-bg-opacity, 1));
+  color: rgb(196 180 164 / var(--tw-text-opacity, 1));
+}
+
+.z-998 {
+  z-index: 998;
+}
+
+.z-999 {
+  z-index: 999;
+}
+
+.style-1::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(232, 218, 196, 0.5); /* Lebih transparan */
+}
+
+.style-1::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 12px;
+  background-color: rgba(232, 218, 196, 0.5); /* Lebih transparan */
+}
+
+.style-1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(78, 61, 47, 0.8); /* Coklat juga sedikit transparan */
+}
+
+.truncate-input {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ant-select-selector {
+  background-color: transparent !important;
+}
+
+/* global CSS atau di file CSS/SCSS */
+.ant-select-disabled .ant-select-selector {
+  background-color: #f5f5f5 !important;
+  color: rgba(0, 0, 0, 0.25) !important;
+  cursor: not-allowed !important;
+  border-color: #d9d9d9 !important;
+}
+
+.ant-select-disabled .ant-select-selection-item {
+  color: #2b2a26 !important; /* ubah jika memang ingin warnanya merah */
+}
+
+/* Base DatePicker style */
+.ant-picker {
+  background-color: transparent !important;
+}
+
+/* Disabled DatePicker style */
+.ant-picker-disabled {
+  background-color: #f5f5f5 !important;
+  color: rgba(0, 0, 0, 0.25) !important;
+  cursor: not-allowed !important;
+  border-color: #d9d9d9 !important;
+}
+
+/* Adjust input text color if needed */
+.ant-picker-disabled input[disabled] {
+  color: #2b2a26 !important; /* ubah sesuai keinginan */
+}
+
+/* Optional: override the suffix icon color */
+.ant-picker-disabled .ant-picker-suffix {
+  color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.ant-picker-disabled .ant-picker-input input {
+  color: #2b2a26 !important; /* ubah jika memang ingin warnanya merah */
+}
+
+/* FOCUSED state - prioritas tertinggi */
+.ant-select-focused .ant-select-selector,
+.ant-select-open .ant-select-selector {
+  border-color: #4e3d2f !important;
+  box-shadow: none !important;
+}
+
+/* HOVER state - hanya jika tidak focus atau open */
+.ant-select:not(.ant-select-disabled):not(.ant-select-focused):not(
+    .ant-select-open
+  ):hover
+  .ant-select-selector {
+  border-color: #d0b88a !important;
+  box-shadow: none !important;
+}
+
+/* FOCUSED state - prioritas tertinggi */
+.ant-picker-focused,
+.ant-picker-open {
+  border-color: #4e3d2f !important;
+  box-shadow: none !important;
+}
+
+/* HOVER state - hanya jika tidak focused atau open */
+.ant-picker:not(.ant-picker-focused):not(.ant-picker-open):hover {
+  border-color: #d0b88a !important;
+  box-shadow: none !important;
+}
+
+.ant-picker-active-bar {
+  background: #d0b88a !important; /* warna sesuai focus border kamu */
+}
