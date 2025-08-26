@@ -161,7 +161,7 @@ function App() {
               path="/login"
               element={
                 <>
-                  <PageTitle title="Akui Bird Nest" />
+                  <PageTitle title="Siba ERP" />
                   <Login />
                 </>
               }
@@ -183,7 +183,7 @@ function App() {
                   <PrivateRoute
                     element={
                       <>
-                        <PageTitle title="Akui Bird Nest Indonesia" />
+                        <PageTitle title="Siba ERP" />
                         <Dashboard />
                       </>
                     }

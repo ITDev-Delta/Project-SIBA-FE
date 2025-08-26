@@ -353,7 +353,7 @@ const CurrencySetup: React.FC = () => {
       <div className="flex justify-between items-center mb-8">
         <MyBreadcrumb pageName="Master Currency" />
         {canCreate && (
-          <PrimaryButton to={"/accounting/currency/master-currency/add"}>
+          <PrimaryButton to={"/master/master-currency/add"}>
             Tambah Data
           </PrimaryButton>
         )}

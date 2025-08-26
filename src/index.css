@@ -21,12 +21,12 @@
   --color-bodydark2: #a89a8a;
 
   /* Brand */
-  --color-primary: #4e3d2f;
-  --color-secondary: #d0b88a;
+  --color-primary: #222831;
+  --color-secondary: #d4c9be;
 
   /* Stroke / borders */
   --color-stroke: #e2e8f0;
-  --color-strokedark: #5b4a3f;
+  --color-strokedark: #393e46;
   --color-form-strokedark: #6b5a4a;
 
   /* Input */
@@ -342,11 +342,11 @@
 }
 
 .custom-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #4e3d2f !important; /* Active tab color */
+  color: #222831 !important; /* Active tab color */
 }
 
 .custom-tabs .ant-tabs-tab:hover .ant-tabs-tab-btn {
-  color: #4e3d2f; /* Hover tab color */
+  color: #222831; /* Hover tab color */
 }
 
 .custom-tabs .ant-tabs-tab-btn {
@@ -373,17 +373,17 @@
 }
 
 .ant-menu-dark .ant-menu-item:hover {
-  background-color: rgb(63 58 51 / var(--tw-bg-opacity, 1));
+  background-color: #393e46;
   color: rgb(196 180 164 / var(--tw-text-opacity, 1));
 }
 
 .ant-menu-dark .ant-menu-title:hover {
-  background-color: rgb(63 58 51 / var(--tw-bg-opacity, 1));
+  background-color: #393e46;
   color: rgb(196 180 164 / var(--tw-text-opacity, 1));
 }
 
 .ant-menu-dark .ant-menu-item-selected {
-  background-color: rgb(63 58 51 / var(--tw-bg-opacity, 1));
+  background-color: #393e46;
   color: rgb(196 180 164 / var(--tw-text-opacity, 1));
 }
 
@@ -392,7 +392,7 @@
 }
 
 .ant-menu-dark .ant-menu-submenu-title:hover {
-  background-color: rgb(63 58 51 / var(--tw-bg-opacity, 1));
+  background-color: #393e46;
   color: rgb(196 180 164 / var(--tw-text-opacity, 1));
 }
 
@@ -472,7 +472,7 @@
 /* FOCUSED state - prioritas tertinggi */
 .ant-select-focused .ant-select-selector,
 .ant-select-open .ant-select-selector {
-  border-color: #4e3d2f !important;
+  border-color: #222831 !important;
   box-shadow: none !important;
 }
 
@@ -488,7 +488,7 @@
 /* FOCUSED state - prioritas tertinggi */
 .ant-picker-focused,
 .ant-picker-open {
-  border-color: #4e3d2f !important;
+  border-color: #222831 !important;
   box-shadow: none !important;
 }
 

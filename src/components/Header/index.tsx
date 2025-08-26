@@ -23,25 +23,25 @@ const CustomHeader = (props: {
       }}
     >
       <Header className="sticky top-0 z-998 flex w-full bg-white/95 backdrop-blur-md border-b border-stroke drop-shadow-sm p-0 transition-all duration-200">
-        <div className="flex flex-grow items-center justify-between px-4 py-3">
+        <div className="flex flex-grow items-center justify-between py-3">
           {/* Left Section - Logo & Hamburger */}
-          <div className="lg:hidden flex items-center gap-3 sm:gap-4">
-            {/* Hamburger Toggle BTN (mobile only) */}
-            <Button
-              icon={<MenuOutlined />}
-              onClick={(e) => {
-                e.stopPropagation();
-                props.setSidebarOpen(!props.sidebarOpen);
-              }}
-              className="z-998 rounded-md border border-stroke bg-white hover:bg-gray-50 shadow-sm lg:hidden transition-colors duration-200"
-              size="small"
-            />
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="lg:hidden">
+              <Button
+                icon={<MenuOutlined />}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  props.setSidebarOpen(!props.sidebarOpen);
+                }}
+                className="z-998 rounded-md border border-stroke bg-white hover:bg-gray-50 shadow-sm transition-colors duration-200"
+                size="small"
+              />
+            </div>
 
-            {/* Logo & Brand */}
             <Link className="flex items-center gap-2 flex-shrink-0" to="/">
               <img src={LogoIcon} alt="Logo" className="h-8 w-8" />
               <span className="hidden sm:inline-block font-bold text-lg text-primary tracking-wide">
-                AKUI ERP
+                Siba ERP
               </span>
             </Link>
           </div>
