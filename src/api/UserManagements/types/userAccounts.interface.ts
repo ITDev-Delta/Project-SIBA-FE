@@ -1,4 +1,4 @@
-import { IRoleAndPermission } from "./roleAndPermission.interface";
+import type { IRoleAndPermission } from "./roleAndPermission.interface";
 
 export interface IUserAccount {
   id: number;

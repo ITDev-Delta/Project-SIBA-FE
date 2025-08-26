@@ -1,5 +1,5 @@
-import { IRoleAndPermission } from "./roleAndPermission.interface";
-import { IUserAccount } from "./userAccounts.interface";
+import type { IRoleAndPermission } from "./roleAndPermission.interface";
+import type { IUserAccount } from "./userAccounts.interface";
 
 export interface IProfile {
   user: IUserAccount;
