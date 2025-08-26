@@ -27,9 +27,7 @@ const Login: React.FC = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full mb-4 shadow-lg">
             <img src={LogoIcon} alt="Akui Logo" className="w-12 h-12" />
           </div>
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">
-            PT AKUI BIRD NEST INDONESIA
-          </h1>
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">SIBA ERP</h1>
           <p className="text-gray-600">Selamat datang kembali !</p>
         </div>
 
@@ -118,7 +116,7 @@ const Login: React.FC = () => {
         {/* Version Info */}
         <div className="text-center mt-8">
           <p className="text-sm text-gray-500">
-            © 2025 PT Akui Bird Nest Indonesia. All rights reserved.
+            © 2025 Siba ERP. All rights reserved.
           </p>
           <p className="text-xs text-gray-400 mt-1">Version 1.0.0</p>
         </div>
