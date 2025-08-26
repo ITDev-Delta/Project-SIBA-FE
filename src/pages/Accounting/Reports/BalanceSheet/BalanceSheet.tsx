@@ -52,7 +52,9 @@ const BalanceSheet: React.FC = () => {
   const [errorTahunAwal, setErrorTahunAwal] = useState<string>();
   const [errorTahunAkhir, setErrorTahunAkhir] = useState<string>();
 
-  const [selectedReport, setSelectedReport] = useState<EnumReport>();
+  const [selectedReport, setSelectedReport] = useState<
+    EnumReport | undefined
+  >();
 
   const reports = [
     EnumReport.SingleMonth,
