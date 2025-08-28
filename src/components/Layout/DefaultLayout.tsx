@@ -14,14 +14,14 @@ const DefaultLayout: React.FC = () => {
     location.pathname === "*";
 
   const { isLoggedIn } = useAuthContext();
-  const { profile, getProfile, isLoading } = useProfileContext();
+  const { profile, getProfile } = useProfileContext();
 
   // Auto-fetch profile when user is logged in but profile is not loaded
   useEffect(() => {
-    if (isLoggedIn && !profile && !isLoading) {
+    if (isLoggedIn && !profile) {
       getProfile();
     }
-  }, [isLoggedIn, profile, isLoading, getProfile]);
+  }, [isLoggedIn, profile, getProfile]);
 
   return (
     <div className="">
