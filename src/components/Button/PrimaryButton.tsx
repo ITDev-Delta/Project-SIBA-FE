@@ -29,8 +29,8 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
   color = "primary", // Destructure color prop with default value
 }) => {
   const baseClassNames =
-    "items-center justify-center rounded-md py-3 px-4 text-sm text-center items-center font-medium cursor-pointer lg:px-6 xl:px-8";
-  const primaryClassNames = `bg-${color} text-white hover:bg-strokedark`;
+    "items-center justify-center rounded-md py-3 px-4 text-sm text-center items-center font-medium lg:px-6 xl:px-8";
+  const primaryClassNames = `bg-${color} text-white hover:bg-strokedark cursor-pointer`;
   const disabledClassNames = `bg-gray-200 text-gray-400 cursor-not-allowed`;
   const outlinedClassNames = `border border-${color} text-${color} hover:${
     "bg-" + color

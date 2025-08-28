@@ -711,7 +711,7 @@ const RoleAndPermissions: React.FC = () => {
         if (res.status === 200 || res.status === 201) {
           setIsLoadingModal(false);
 
-          setRoleAndPermissions(res.data.data);
+          setRoleAndPermissions(res.data.data.data);
           setPagination({
             current: page,
             pageSize: pageSize,

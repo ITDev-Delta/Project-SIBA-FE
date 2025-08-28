@@ -22,7 +22,10 @@ const CustomHeader = (props: {
         // token: { colorText: "#FFFFFF" },
       }}
     >
-      <Header className="sticky top-0 z-998 flex w-full bg-white/95 backdrop-blur-md border-b border-stroke drop-shadow-sm p-0 transition-all duration-200">
+      <Header
+        style={{ padding: "0 20px" }}
+        className="sticky top-0 z-998 flex w-full bg-white/95 backdrop-blur-md border-b border-stroke drop-shadow-sm p-0 transition-all duration-200"
+      >
         <div className="flex flex-grow items-center justify-between py-3">
           {/* Left Section - Logo & Hamburger */}
           <div className="flex items-center gap-3 sm:gap-4">
